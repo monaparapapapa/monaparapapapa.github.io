@@ -1,65 +1,87 @@
-/* in case I didn't tell you yet - use this whenever you do anything */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* 
+body {
+    font-family: Helvetica;
+    background-color: ghostwhite;
+    font-size: 20px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-decoration: none;
+}
 
-This task doesn't require setting any widths and heights so don't. 
-You will never need any pixel values other than 10px.
-Well, all the exceptions to this are already written just below (width:960px and 100px)
-
-Your job is to set some margins, paddings and floats (spoiler: and then you get in trouble :) )
-
-Oh, and you don't need any more selectors here, but you can add some if you want.
-
-DO:
-1. change the text color after you look at the HTML and the image you're reproducing
-2. uncomment the borders 
-3. do what you need to fit the outlines
-4. get in trouble with footer and solve the problem
-
-*/
-
-body{
-	/* change this to some color to see the text. ever heard of RGBA? */
-	color: white;
+section>div{
 	
-}
-
-div.wrapper {
-
-	border: 2px dotted yellow;
-	width: 960px;
-	margin: auto;
-
-	/*border: 2px dotted yellow;*/
-}
- header{
-	border: 2px dotted yellow;
-	padding: 10px;
-	 margin: 10px;
-}
-
-
-div.content {
-
-}
-
-div.sidebar {
-	width: 100px;
-	border: 2px dotted yellow;
-	margin: 10px;
 	float: left;
+	display: block;
+	width: 30%;
+	margin: 5px;
+}
+
+.a{
 	
-	/*border: 2px dotted yellow;*/
-}
-
-
-header, footer {
-	border: 2px dotted yellow;
 	clear: both;
-	margin: 10px;
-	padding: 10px
-	/*border: 2px dotted yellow;*/
+	overflow: auto;
+}
+
+.b{
+
+	overflow: auto;
+}
+.c{
+	
+	overflow: auto;
+}
+
+h1{
+	background-color: crimson;
+	font-size: 50px
+}
+
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.menu {
+    
+    float: left;
+	
+}
+
+.menu>ul {
+    padding: 0;
+	
+	
+}
+
+.menu>ul>li {
+    list-style-type: none;
+	float: right;
 
 }
 
+.menu>ul>li>a {
+    display: block;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 32px;
+	text-align: center;
+    color: #000;
+    font-size: 14px;
+	
+}
+
+
+.content {
+	
+    padding: 30px;
+    margin-left: 300px;
+}
+
+
+.footer{
+	bottom: 10px;
+	max-width: 400px;
+display: block
+}
